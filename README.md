@@ -51,6 +51,8 @@ python3 fibologica.py
 
 
 
+### SOLUCIONES:
+
 Puntos 1 y 2 (Autómatas finitos deterministas): Fueron implementados mediante lógica de transiciones de estados en Python, permitiendo validar cadenas complejas (notación ajedrecística) y procesar lotes de identificadores desde archivos externos.
 
 Punto 3 (Flex & Bison): Fueron utilizados un analizador léxico (Flex) para tokenizar la función SQRT y un analizador gramatical (Bison) para procesar la expresión gramatical. La lógica de cálculo basa en el método de Newton-Raphson en C para garantizar la precisión matemática.
