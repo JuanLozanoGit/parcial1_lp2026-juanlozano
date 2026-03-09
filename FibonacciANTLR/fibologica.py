@@ -1,5 +1,5 @@
 def fibo_secuencia(n_terminos):
-    # Genera la secuencia exacta: 0, 1, 1, 2, 3, 5, 8, 13
+    # Secuencia
     a, b = 0, 1
     secuencia = []
     for _ in range(n_terminos): 
@@ -8,30 +8,30 @@ def fibo_secuencia(n_terminos):
     return ", ".join(secuencia)
 
 if __name__ == "__main__":
-    print("--- Calculadora Fibonacci (Escribe 'salir' para terminar) ---")
+    print("Calculadora Fibonacci")
     
     while True:
         try:
             entrada = input(">> ").strip()
             
-            # Opción para salir del programa legalmente
+            # Salir
             if entrada.lower() in ["salir", "exit", "quit"]:
                 print("Saliendo...")
                 break
 
-            # Validamos el formato FIBO(n)
+            # Validacion
             if "FIBO(" in entrada.upper() and ")" in entrada:
-                # Extraemos lo que está entre paréntesis para validar que sea número
+                # Contenido numero
                 contenido = entrada[entrada.find("(")+1 : entrada.find(")")]
                 
                 if contenido.isdigit():
-                    # Si todo está bien, mostramos la secuencia de 8 términos
+                    # Ejemoplo secuencia
                     print(fibo_secuencia(8))
                 else:
-                    print("ERROR: El valor dentro del paréntesis debe ser un número entero.")
+                    print("ERROR: El valor tiene que ser un numero entero.")
             else:
-                print("AVISO: Formato incorrecto. Debe ser 'FIBO(n)' (ejemplo: FIBO(20)).")
+                print("AVISO: Debe ser 'FIBO(n).")
         
         except Exception as e:
-            print(f"Ocurrió un error inesperado: {e}")
+            print(f"Error {e}")
             print("Intenta de nuevo.")
