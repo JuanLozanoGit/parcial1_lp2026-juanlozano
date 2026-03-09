@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-// Declaración para evitar el error de declaración implícita
+// Declaración de int yylex para evitar errores al momento de la ejecucion
 int yylex();
 void yyerror(const char *s);
 
