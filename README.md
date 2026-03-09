@@ -15,7 +15,6 @@ python3 AFDajedrez-punto1.py
 Valida identificadores usando una lista de pruebas externa.
 
 ```bash
-# Requiere el archivo pruebaid.txt en la carpeta
 python3 AFDidentificadores-punto2.py
 
 ```
@@ -25,7 +24,7 @@ python3 AFDidentificadores-punto2.py
 Implementación del método **Newton-Raphson** para cálculo de raíces.
 
 ```bash
-# 1. Generar código C
+# 1. Generar código.C
 bison -d calc.y
 flex calc.l
 # 2. Compilar
@@ -44,7 +43,7 @@ Comparativa de velocidad calculando Fibonacci(40) de forma recursiva.
 gcc -O3 bench.c -o bench_c
 ./bench_c
 
-# Ejecutar Python
+# Ejecutar
 python3 bench.py
 
 ```
@@ -54,10 +53,10 @@ python3 bench.py
 Gramática para procesar el comando `FIBO(n)` y devolver la secuencia.
 
 ```bash
-# 1. Generar archivos base desde el JAR
+# 1. Generar archivos
 java -jar antlr-4.13.1-complete.jar -Dlanguage=Python3 -no-listener -visitor Fibo.g4
 
-# 2. Ejecutar el programa
+# 2. Ejecutar
 python3 fibologica.py
 
 ```
