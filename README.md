@@ -3,16 +3,12 @@
 
 ### 1. AFD Movimientos de Ajedrez
 
-Valida notación algebraica de ajedrez.
-
 ```bash
 python3 AFDajedrez-punto1.py
 
 ```
 
 ### 2. AFD Identificadores (IDs)
-
-Valida identificadores usando una lista de pruebas externa.
 
 ```bash
 python3 AFDidentificadores-punto2.py
@@ -21,42 +17,31 @@ python3 AFDidentificadores-punto2.py
 
 ### 3. Calculadora de Raíz Cuadrada (Flex & Bison)
 
-Implementación del método **Newton-Raphson** para cálculo de raíces.
-
 ```bash
-# 1. Generar código.C
+
 bison -d calc.y
 flex calc.l
-# 2. Compilar
 gcc calc.tab.c lex.yy.c -o calculadora -lm
-# 3. Ejecutar con nuestro archivo de entrada
 ./calculadora < entrada.txt
 
 ```
 
 ### 4. Benchmark de Rendimiento (C vs Python)
 
-Comparativa de velocidad calculando Fibonacci(40) de forma recursiva.
 
 ```bash
-# Compilar C
+
 gcc -O3 bench.c -o bench_c
 ./bench_c
-
-# Ejecutar
 python3 bench.py
 
 ```
 
 ### 5. Secuencia Fibonacci (ANTLR4 + Python)
 
-Gramática para procesar el comando `FIBO(n)` y devolver la secuencia.
-
 ```bash
-# 1. Generar archivos
-java -jar antlr-4.13.1-complete.jar -Dlanguage=Python3 -no-listener -visitor Fibo.g4
 
-# 2. Ejecutar
+java -jar antlr-4.13.1-complete.jar -Dlanguage=Python3 -no-listener -visitor Fibo.g4
 python3 fibologica.py
 
 ```
