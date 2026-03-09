@@ -61,3 +61,5 @@ java -jar antlr-4.13.1-complete.jar -Dlanguage=Python3 -no-listener -visitor Fib
 python3 fibologica.py
 
 ```
+
+### NOTA: Para poder correr el 5, toca escribir la abreviatura de FIBO mas un numero, ejemplo. FIBO(20)  Sino dara un error.
