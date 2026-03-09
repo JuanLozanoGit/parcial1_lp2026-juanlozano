@@ -1,0 +1,11 @@
+#ACEPTA
+miVariable
+contador2026
+X
+GlobalVar
+
+#NO ACEPTA
+2026Variable
+$valor
+_inicio
+variable espacio
